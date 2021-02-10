@@ -1,0 +1,175 @@
+<!DOCTYPE html> <!-- Définit le type du document -->
+<html> <!-- Définit un document HTML -->
+<head>
+    <title>The Sweet | Store</title> <!--Définit le titre du document-->
+    <meta charset="UTF-8"> <!--Spécifier le codage de caractères pour le document HTML-->
+    <link rel="stylesheet" href="styles.css" /> <!--Appel d'un fichier CSS externe-->
+    <script src="store.js"></script> <!--Appel d'un fichier JS externe-->
+</head>
+
+<body>
+    <!--Définit le Header-->
+    <header class="main-header"> 
+        <!--Définit la barre de navigation-->
+        <nav class="nav barre-nav"> 
+            <ul>
+                <li><a href="index.html">HOME</a></li> <!--Lien vers Home-->
+                <li><a href="store.html">STORE</a></li> <!--Lien vers Store-->
+                <li><a href="about.html">ABOUT</a></li> <!--Lien vers About-->
+            </ul>
+        </nav>
+        <!--WELCOME-->
+        <div class="main-div">
+            <h1 class="header-name">WELCOME TO OUR STORE</h1>
+        </div>
+    </header>
+
+    <!--Définit une Section-->
+    <section class="main-section container ">
+        <!--Titre de Section-->
+        <h2 class="section-header">Cakes</h2>
+            <!--Définit un div pour les items-->
+            <div class="shop-items">
+                <!--Définit le 1er item-->
+                <div class="shop-item">
+                    <span class="shop-item-title">Macarons Cake</span>
+                    <img class="shop-item-image-store" src="cake1.jpg">
+                    <div class="shop-item-infos">
+                        <span class="shop-item-price">25 DT</span>
+                        <button class="shop-item-button" type="button">ADD TO CART
+                        </button>
+                    </div>
+                </div>
+                <!--Définit le 2éme item-->
+                <div class="shop-item">
+                    <span class="shop-item-title">Raspberry Cake</span>
+                    <img class="shop-item-image-store" src="cake2.jpg">
+                    <div class="shop-item-infos">
+                        <span class="shop-item-price">30 DT</span>
+                        <button class="shop-item-button"type="button">ADD TO CART
+                        </button>
+                    </div>
+                </div>
+                <!--Définit le 3éme item-->
+                <div class="shop-item">
+                    <span class="shop-item-title">Chocolate Cake</span>
+                    <img class="shop-item-image-store" src="cake3.jpg">
+                    <div class="shop-item-infos">
+                        <span class="shop-item-price">25 DT</span>
+                        <button class="shop-item-button" type="button">ADD TO CART
+                        </button>
+                    </div>
+                </div>
+                <!--Définit le 4éme item-->
+                <div class="shop-item">
+                    <span class="shop-item-title">Vanilla Cake</span>
+                    <img class="shop-item-image-store" src="cake4.jpg">
+                    <div class="shop-item-infos">
+                        <span class="shop-item-price">35 DT</span>
+                        <button class="shop-item-button" type="button">ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Définit une 2éme section-->
+    <section class="container main-section">
+        <!--Titre de Section-->
+        <h2 class="section-header">Cup Cakes</h2>
+            <!--Définit un div pour les items-->
+            <div class="shop-items">
+                <!--Définit le 1er item-->
+                <div class="shop-item">
+                    <span class="shop-item-title">Raspberry Cup Cake</span>
+                    <img class="shop-item-image-store" src="cupcake1.jpg">
+                    <div class="shop-item-infos">
+                        <span class="shop-item-price">45 DT</span>
+                        <button class="shop-item-button" type="button">ADD TO CART
+                        </button>
+                    </div>
+                </div>
+                <!--Définit le 2éme item-->
+                <div class="shop-item">
+                    <span class="shop-item-title">Strawberry Cup Cake </span>
+                    <img class="shop-item-image-store" src="cupcake2.jpg">
+                    <div class="shop-item-infos">
+                        <span class="shop-item-price">35 DT</span>
+                        <button class="shop-item-button" type="button">ADD TO CART
+                        </button>
+                    </div>
+                </div>
+                <!--Définit le 3éme item-->
+                <div class="shop-item">
+                    <span class="shop-item-title">Vanilla Cup Cake</span>
+                    <img class="shop-item-image-store" src="cupcake3.jpg">
+                    <div class="shop-item-infos">
+                        <span class="shop-item-price">30 DT</span>
+                        <button class="shop-item-button" type="button">ADD TO CART
+                        </button>
+                    </div>
+                </div>
+                <!--Définit le 4éme item-->
+                <div class="shop-item">
+                    <span class="shop-item-title">Chocolate Cup Cake</span>
+                    <img class="shop-item-image-store" src="cupcake4.jpg">
+                    <div class="shop-item-infos">
+                        <span class="shop-item-price">15 DT</span>
+                        <button class="shop-item-button" type="button">ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Définit une 3éme section-->
+    <section class="container main-section">
+        <!--Titre de Section-->
+        <h2 class="section-header">Purchases</h2>
+        <!--Définit un div pour la facture-->
+            <div class="cart">
+                <span class="cart-column cart-header cart-item ">Item</span>
+                <span class="cart-column cart-header cart-price ">Price</span>
+                <span class="cart-column cart-header cart-quantity ">Quantity</span>
+            </div>
+            <!--Définit un div pour les items-->
+            <div class="cart-items">
+            </div>
+            <!--Définit un div pour le total-->
+            <div class="cart-total">
+                <strong class="cart-total-title">TOTAL</strong>
+                <span class="cart-total-price">0 DT</span>
+            </div>
+            <!--Définit le bouton payer-->
+            <button class="btn-confirm" type="button" onclick="window.location.href = 'form.html';">Confirm</button>
+    </section>
+
+    <!--Définit un Footer-->
+    <footer class="main-footer">
+        <!--Définit un div pour le footer-->
+        <div class="container main-footer-container">
+            <h3 class="footer-name">Join The Sweet</h3>
+                <!--Définit la barre de footer-->
+                <ul class="nav footer-nav">
+                    <!--Définit le 1er lien-->
+                    <li>
+                        <a href="https://www.youtube.com">
+                            <img src="YouTube Logo.png">
+                        </a>
+                    </li>
+                    <!--Définit le 2éme lien-->
+                    <li>
+                        <a href="https://www.instagram.com">
+                            <img src="insta.png">
+                        </a>
+                    </li>
+                    <!--Définit le 3éme lien-->
+                    <li>
+                        <a href="https://www.facebook.com" >
+                            <img src="Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

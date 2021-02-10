@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Définit le type du document -->
+<html> <!-- Définit un document HTML -->
+<head>
+    <title>The Sweet | Order </title> <!--Définit le titre du document-->
+    <meta charset="UTF-8"> <!--Spécifier le codage de caractères pour le document HTML-->
+    <link rel="stylesheet" href="form.css" /> <!--Appel d'un fichier CSS externe-->
+    <script  src="jquery-3.3.1.js"></script> <!--Appel biblio jquery-->
+    <script src="form.js"></script> <!--Appel d'un fichier JS externe-->
+</head>
+
+
+<body>
+    <!--Définit une section-->
+    <section class="container">  
+      <!--Création d'un formulaire-->
+      <form id="contact" action="" method="post">
+        <!--Titre de formulaire-->
+        <h3> Order Confirmation</h3>
+        
+        <!--Définit un fieldset pour le nom-->
+        <fieldset>
+          <input placeholder="Your name..."  id="Nom" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <!--Définit un fieldset pour le mail-->
+        <fieldset>
+          <input placeholder="Your Email Address..."  id="Mail" type="email" tabindex="2" required>
+        </fieldset>
+        <!--Définit un fieldset pour le numero de téléphone-->
+        <fieldset>
+          <input placeholder="Your Phone Number..."   id="Tel" type="tel" tabindex="3" required>
+        </fieldset>
+        <!--Définit un fieldset pour l'adresse-->
+        <fieldset>
+          <input placeholder="Your adress.... (exactly) "   id="Adresse" type="adr" tabindex="3" required>
+        </fieldset>
+        <!--Définit un fieldset pour le numéro de carte-->
+        <fieldset>
+          <input placeholder="Your card number... " id="NumeroCarte" type="num" tabindex="4" required>
+        </fieldset>
+        <!--Définit un fieldset pour le bouton submit-->
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending"    >Submit</button>
+        </fieldset>
+    
+        <p class="copyright"> Copyright © 2019 </p>
+      </form>
+    </section>
+    
+</body>
+</html>
